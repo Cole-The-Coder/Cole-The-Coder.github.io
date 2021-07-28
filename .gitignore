@@ -1,1 +1,5 @@
 /env
+core/__pycache__/
+db.sqlite3
+personal_site/__pycache__/
+**/__pycache__/
