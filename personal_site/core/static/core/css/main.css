@@ -1,13 +1,19 @@
+
 *,
 :before,
 :after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+}
+html {
+  background-color: #031114;
 }
 .hide {
   display: none;
 }
+
 .page__style {
   background: #6d326d;
   font-family: OpenSans-Regular, sans-serif;
@@ -27,13 +33,21 @@
   text-align: center;
 }
 .page__style h1 {
-  font-weight: 300;
-  margin-top: 200px;
+  font-weight: 900;
+  margin-top: 40px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.page__style .nav__bar {
+  text-align: center;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
 }
 .page__style .btn_nav {
   background: #002a32;
-  border-radius: 30px;
+  border-radius: 20px;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -43,6 +57,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  margin-inline: 30px;
   padding: 17px 30px;
   width: 146px;
 }
@@ -54,6 +69,20 @@
   text-decoration: none;
   color: #fff;
 }
+.page__style .text-box {
+  color:black;
+  align-items: baseline;
+  margin-top: 75px;
+  margin-inline: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-inline: 10px;
+  font-weight: 600;
+  font-size: medium;
+  background-color: rgba(202, 196, 196, 0.678);
+  border-radius: 10px;
+  text-align: left;
+}
 .page__style a:hover {
   text-decoration: underline;
 }
@@ -63,30 +92,44 @@
 .fadeIn {
   z-index: 10;
 }
+.about-me-text {
+  text-align: left;
+  margin-inline: 10px;
+}
 /*  home
 -----------------------------------*/
 .home {
   background: #5da9e9;
+  color:#031114;
+  width: 100%;
+  height: 100%;
+  background-repeat: nobackgrepeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-image: url("../images/DSC_0134.JPG");
 }
+
 /*  Projects
 -----------------------------------*/
 .projects {
-  background: #bd5de9;
+  background: linear-gradient(180deg, rgb(30, 110, 116) 0%, rgb(150, 234, 240) 100%);
 }
 /*  Skills
 -----------------------------------*/
 .skills {
-  background: #5de974;
+  background: linear-gradient(180deg, rgb(44, 104, 4) 0%, rgb(107, 238, 107) 100%);
 }
 /*  About
 -----------------------------------*/
 .about {
-  background: #fb9b33;
+  background: linear-gradient(180deg, rgb(2, 13, 163) 0%, rgb(120, 122, 223) 100%);
+  
 }
 /*  Contact
 -----------------------------------*/
 .contact {
-  background: #c9cdc0;
+  background: linear-gradient(180deg, rgb(202, 99, 3) 0%, rgb(243, 220, 146) 100%);
 }
 /*****************************************************************
 ~ Mobile media-queries (max-width: 767px)
@@ -97,62 +140,84 @@
   }
 }
 @-moz-keyframes animate {
-    20% {
-		transform: scale(1, 0.002);
-	  }
-	  50% {
-		transform: scale(1, 0.002);
-		opacity: 0;
-	  }/*
-	  50% {
-		transform: scale(1, 0.002);
-		opacity: 0;
-	  }
-	  85% {
-		transform: scale(1, 0.002);
-		opacity: 1;
-	  }*/
-	  100% {
-		transform: scale(1, 1);
-  }
-}
-@-o-keyframes animate {
-	20% {
-		transform: scale(1, 0.002);
-	  }
-	  50% {
-		transform: scale(1, 0.002);
-		opacity: 0;
-	  }/*
-	  50% {
-		transform: scale(1, 0.002);
-		opacity: 0;
-	  }
-	  85% {
-		transform: scale(1, 0.002);
-		opacity: 1;
-	  }*/
-	  100% {
-		transform: scale(1, 1);
-  }
-}
-@keyframes animate {
-  20% {
+  10% {
     transform: scale(1, 0.002);
+  }
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
   }
   50% {
-    transform: scale(1, 0.002);
-    opacity: 0;
-  }/*
-  50% {
-    transform: scale(1, 0.002);
+    transform: scale(0.2, 0.002);
     opacity: 0;
   }
   85% {
     transform: scale(1, 0.002);
     opacity: 1;
-  }*/
+  }
   100% {
     transform: scale(1, 1);
   }
 }
+@-webkit-keyframes animate {
+  10% {
+    transform: scale(1, 0.002);
+  }
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@-o-keyframes animate {
+  10% {
+    transform: scale(1, 0.002);
+  }
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes animate {
+  10% {
+    transform: scale(1, 0.002);
+  }
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
