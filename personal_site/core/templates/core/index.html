@@ -25,19 +25,32 @@
 <body translate="no" >
 <div class="body__selector">
   <!--
-		//	projects
+		//	work
 		///////////////////////////////////-->
-<div class="page__style projects">
+<div class="page__style work">
   <div class="page__description">
-    <div id="projects">
+    <div id="work">
 
-      <h1>Projects</h1>
+      <h1>Things I made</h1>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 px-1">
+            <p><strong>Dan Tynan Personal Site</strong></p>
+            <!-- Picture of front page -->
+            <a href="https://dantynan.com" class="thumbnail" target="_blank">
+              <img src="{% static 'core/images/dansite_thumbnail.png' %}" alt="Dansite Thumbnail">
+            </a>
+            <p class="text-box">Personal website, created using Django, Bootstrap, and MySQL as backend.</p>
+          </div>
+        </div>
+      </div>
       
       <div class="nav__bar">
-        <button class="btn_nav projects_link">Experience</button>
+        <button class="btn_nav work_link">Work</button>
         <button class="btn_nav skills_link">Skills</button>
         <button class="btn_nav home_link">Home</button>
-        <button class="btn_nav about_link">About Me</button>
+        <button class="btn_nav about_link">About</button>
         <button class="btn_nav contact_link">Contact</button>
       </div>
     </div>
@@ -50,15 +63,24 @@
   <div class="page__description">
     <div id="skills">
       <h1>Skills</h1>
-
+    </div>
+    <div class="container">
+      <div class="text-box">
+        <ul class="text-decoration-none">
+          <li>I can code in <strong>C++</strong>.</li>
+          <li>I can code in <strong>Python</strong>.</li>
+          <li>Even <strong>Java!</strong> (Kinda)</li>
+        </ul>
+      </div>
+    </div>
       <div class="nav__bar">
-        <button class="btn_nav projects_link">Experience</button>
+        <button class="btn_nav work_link">Work</button>
         <button class="btn_nav skills_link">Skills</button>
         <button class="btn_nav home_link">Home</button>
         <button class="btn_nav about_link">About</button>
         <button class="btn_nav contact_link">Contact</button>
       </div>
-    </div>
+    
   </div>
 </div>
 
@@ -71,25 +93,24 @@
       <h1>About</h1>
     </div>
     
-    <div class=" row container">
-      <div class="col-md-4">
-        <img src="{% static 'core/images/MeProf.jpg' %}" class="rounded">
-      </div>
-      <div class="col-md-8">
-        <p class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+    <div class="container">
+        <p class="about-text text-box">
+          Hello, I'm a man named Cole. I like food and water and entertainment. I am a fleshy automaton operated by neurotransmitters.
+          
+        </p>
+        <br>
+        <p class="about-addend text-box">
+          BTW, the fact that this site is a total retina-splitting eyesore is a conscious decision, trust me. <br>
+          It's avant-garde.
+        </p>
     </div>
       <div class="nav__bar">
-        <button class="btn_nav projects_link">Experience</button>
+        <button class="btn_nav work_link">Work</button>
         <button class="btn_nav skills_link">Skills</button>
         <button class="btn_nav home_link">Home</button>
-        <button class="btn_nav about_link">About Me</button>
+        <button class="btn_nav about_link">About</button>
         <button class="btn_nav contact_link">Contact</button>
       </div>
-
-      
-
-    
   </div>
 </div>
 <!--
@@ -100,12 +121,15 @@
     <div id="contact">
       <h1>Contact</h1>
     </div> 
-
+    <hr>
+    <h4 id="phone">Phone: (910) 859-1660</h4>
+    <h5 id="email">EmaiL: colewtynan@gmail.com</h5>
+    
       <div class="nav__bar">
-        <button class="btn_nav projects_link">Experience</button>
+        <button class="btn_nav work_link">Work</button>
         <button class="btn_nav skills_link">Skills</button>
         <button class="btn_nav home_link">Home</button>
-        <button class="btn_nav about_link">About Me</button>
+        <button class="btn_nav about_link">About</button>
         <button class="btn_nav contact_link">Contact</button>
       </div>
     
@@ -120,13 +144,19 @@
       <div id="home">
         <h1 class="display-2">Welcome to my site!</h1>
       </div>
-      <div class="text-box">
-        <p>Hi, I'm Cole Tynan. I'm a recent graduate that's looking to start my career.</p>
-        <p>I have various skills that I'm sure would be cool and good.</p>
+      <div class="row">
+        <div class="col-md-2" ></div> 
+        <div class="col-md-8">
+          <div class="text-box">
+            <p>Hi, I'm Cole Tynan. I'm a recent graduate that's looking to start my career.</p>
+            <p>I have various skills that I'm sure would be cool and good.</p>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
       </div>
 
       <div class="nav__bar">
-        <button class="btn_nav projects_link">Work</button>
+        <button class="btn_nav work_link">Work</button>
         <button class="btn_nav skills_link">Skills</button>
         <button class="btn_nav home_link">Home</button>
         <button class="btn_nav about_link">About</button>

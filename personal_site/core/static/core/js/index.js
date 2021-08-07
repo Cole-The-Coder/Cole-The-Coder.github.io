@@ -26,9 +26,9 @@ $('.home_link').click(function() {
   }, 1500);
 });
 
-$('.projects_link').click(function() {
+$('.work_link').click(function() {
   setTimeout(function() {
-    $('.projects').addClass('fadeIn');
+    $('.work').addClass('fadeIn');
   }, 1500);
 });
 

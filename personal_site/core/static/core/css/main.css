@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
 
 *,
 :before,
@@ -34,10 +37,11 @@ html {
 }
 .page__style h1 {
   font-weight: 900;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  font-family: 'Bebas Neue', cursive;
 }
 .page__style .nav__bar {
   text-align: center;
@@ -60,10 +64,15 @@ html {
   margin-inline: 30px;
   padding: 17px 30px;
   width: 146px;
+  transition: color 1s, background 1s;
 }
 .page__style .btn_nav:focus,
 .page__style .btn_nav:active {
   outline: none;
+}
+.page__style .btn_nav:hover {
+  color: black;
+  background: white;
 }
 .page__style a {
   text-decoration: none;
@@ -72,8 +81,8 @@ html {
 .page__style .text-box {
   color:black;
   align-items: baseline;
-  margin-top: 75px;
-  margin-inline: 300px;
+  margin-top: 20px;
+  margin-inline: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-inline: 10px;
@@ -109,10 +118,32 @@ html {
   background-size: 100% 100%;
   background-image: url("../images/DSC_0134.JPG");
 }
+#skills {
+  transition: text-transform 4s, color 4s;
+  
+}
+#skills:hover {
+  color:rgb(255, 7, 7);
+  text-transform:lowercase;
 
-/*  Projects
+}
+#phone {
+  color:rgb(120, 122, 223);
+  transition: color 2s;
+}
+#phone:hover {
+  color:rgb(107, 238, 107)
+}
+#email {
+  color:rgb(30, 110, 116);
+  transition: color 2s;
+}
+#email:hover{
+  color:rgb(255, 7, 7);
+}
+/*  work
 -----------------------------------*/
-.projects {
+.work {
   background: linear-gradient(180deg, rgb(30, 110, 116) 0%, rgb(150, 234, 240) 100%);
 }
 /*  Skills
@@ -123,7 +154,16 @@ html {
 /*  About
 -----------------------------------*/
 .about {
-  background: linear-gradient(180deg, rgb(2, 13, 163) 0%, rgb(120, 122, 223) 100%);
+  background-image: url('../images/MeProf.jpg');
+  /*background: linear-gradient(180deg, rgb(2, 13, 163) 0%, rgb(120, 122, 223) 100%);*/
+  
+  
+}
+#about {
+  color:darkred;
+  border-style: outset;
+  border-radius: 3px;
+  background-color: rgb(0, 225, 255, 0.9);
   
 }
 /*  Contact
