@@ -78,20 +78,7 @@ html {
   text-decoration: none;
   color: #fff;
 }
-.page__style .text-box {
-  color:black;
-  align-items: baseline;
-  margin-top: 20px;
-  margin-inline: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-inline: 10px;
-  font-weight: 600;
-  font-size: medium;
-  background-color: rgba(202, 196, 196, 0.678);
-  border-radius: 10px;
-  text-align: left;
-}
+
 .page__style a:hover {
   text-decoration: underline;
 }
@@ -101,10 +88,23 @@ html {
 .fadeIn {
   z-index: 10;
 }
-.about-me-text {
-  text-align: left;
+/* text box
+------------------------------*/
+.text-box {
+  color:black;
+  align-items: baseline;
+  margin-top: 20px;
   margin-inline: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-inline: 10px;
+  font-weight: 600;
+  font-size: medium;
+  background-color: rgba(202, 196, 196, 0.6);
+  border-radius: 10px;
+  text-align: left;
 }
+
 /*  home
 -----------------------------------*/
 .home {
@@ -154,17 +154,22 @@ html {
 /*  About
 -----------------------------------*/
 .about {
-  background-image: url('../images/MeProf.jpg');
+  background-color: white;
   /*background: linear-gradient(180deg, rgb(2, 13, 163) 0%, rgb(120, 122, 223) 100%);*/
   
   
 }
+.about-me-text {
+  text-align: left;
+  margin-inline: 10px;
+}
+#about-img{
+  border-radius: 260px;
+  width: 500px;
+  height: auto;
+}
 #about {
-  color:darkred;
-  border-style: outset;
-  border-radius: 3px;
-  background-color: rgba(112, 112, 112, 0.9);
-  
+  color:black;
 }
 /*  Contact
 -----------------------------------*/
