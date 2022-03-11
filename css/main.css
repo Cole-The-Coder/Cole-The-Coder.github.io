@@ -18,8 +18,6 @@ html {
 }
 
 .page__style {
-  background: #6d326d;
-  font-family: OpenSans-Regular, sans-serif;
   position: fixed;
   top: 0;
   right: 0;
@@ -108,7 +106,6 @@ html {
 /*  home
 -----------------------------------*/
 .home {
-  background: #5da9e9;
   color:#031114;
   width: 100%;
   height: 100%;
@@ -249,11 +246,11 @@ html {
     transform: scale(1, 0.002);
   }
   35% {
-    transform: scale(0.2, 0.002);
+    transform: scale(1, 0.002);
     opacity: 1;
   }
   50% {
-    transform: scale(0.2, 0.002);
+    transform: scale(1, 0.002);
     opacity: 0;
   }
   85% {
